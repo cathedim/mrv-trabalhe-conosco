@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Averta";
+    src: url("/fonts/AvertaStd-Regular.woff2") format("woff2"), url("/fonts/AvertaStd-Regular.woff")
+        format("woff");
+}
+
+body {
+    font-family: 'Averta Std', sans-serif;
+}
+
+#header {
+    margin: 2% 20%;
+}
+
+#logo {
+    width: 130px;
+    float: left;
+}
+
+#header-titulos {
+    margin: 0 20%;
+}
+
+#header-titulos a {
+    color: grey;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#vitrine {
+    display: flex;
+    margin-top: 100px;
+}
+
+#vitrine-paragrafo {
+    background: linear-gradient(225deg, #079D56 0%, #006B3F 100%);
+    border-radius: 32px;
+    width: 612px;
+    height: 100px;
+
+    color: #fff;
+    font-size: 35px;
+    padding: 70px 100px;
+}
+
+#vitrine img {
+    width: 612px;
+    height: 304px;
+    border-radius: 32px;
+    flex-grow: 1;
+}
