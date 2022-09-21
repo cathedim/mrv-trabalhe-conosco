@@ -4,12 +4,9 @@
         format("woff");
 }
 
-body {
+body, html {
     font-family: 'Averta Std', sans-serif;
-}
-
-#header {
-    margin: 2% 20%;
+    margin: 2% 3%;
 }
 
 #logo {
@@ -29,23 +26,94 @@ body {
 
 #vitrine {
     display: flex;
-    margin-top: 100px;
+    /*margin: 0% 5%;
+    width: 90%;*/
 }
 
 #vitrine-paragrafo {
     background: linear-gradient(225deg, #079D56 0%, #006B3F 100%);
     border-radius: 32px;
-    width: 612px;
-    height: 100px;
+    width: 800px;
+    height: 200px;
 
     color: #fff;
-    font-size: 35px;
+    font-size: 350%;
+    font-style: normal;
     padding: 70px 100px;
 }
 
 #vitrine img {
-    width: 612px;
-    height: 304px;
+    width: 800px;
+    height: 350px;
     border-radius: 32px;
     flex-grow: 1;
+}
+
+#caminho {
+    margin-top: 2%;
+}
+
+#caminho p {
+    font-weight: bold;
+}
+
+#caminho p a {
+    color: #006B3F;
+    text-decoration: underline;
+}
+
+#novas-oportunidades {
+    margin: 3% 0%;
+    width: 30%;
+    font-size: 18px;
+}
+
+#novas-oportunidades button {
+    background-color: #006B3F;
+    border-radius: 10px;
+    border-color: transparent;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+    
+}
+
+#novas-oportunidades button:hover,
+#novas-oportunidades button:focus {
+    cursor: pointer;
+}
+
+#marcas {
+    padding: 150px;
+    align-items: center;
+    margin-left: auto;
+}
+
+#marcas-mrv {
+    color: #006B3F;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+#marcas-eco {
+    color: #F18815;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+#marcas-e {
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.marcas-logo {
+    width: 20%;
+    padding: 15px;
+    border: 2px solid #006B3F;
+    border-radius: 10px;
+}
+
+#valores div div details summary {
+    list-style: none;
 }

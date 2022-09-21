@@ -6,6 +6,23 @@
     <title>Trabalhe conosco | MRV</title>
     <link rel="icon" href="img/icon.png">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" crossorigin="anonymous">
+
+    
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script type = "text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#abre-modal").click(function(){
+                alert('oi');
+                $("#myModal").modal();
+            });
+        });
+    </script>  
 </head>
 <body>
     <div id="header">
@@ -23,10 +40,85 @@
         <div id="">
 
         </div>
-        <div id="vitrine">
+    </div>
+	<div id="vitrine" class="row">
+		<div class="col-6">
             <p id="vitrine-paragrafo">Trabalhe conosco nessa transformação</p>
-            <img src="img/trabalhadores.png">
+        </div>
+        <div class="col-6">
+		    <img src="img/trabalhadores.png">
+        </div>
+	</div>
+	
+	<div id="caminho">
+        <p><img src="img/home.png"> > <a href="">Pessoas</a> > <a href="">Trabalhe conosco</a></p>
+    </div>
+    <div class="row">
+        <div id="novas-oportunidades" class="col-5">
+            <h1>Explore novas oportunidades na sua carreira</h1>
+            <p>Quer fazer parte da equipe de <b>uma das melhores empresas para se trabalhar segundo o Great Place To Work 2020</b>? </p>
+            <p>Então, junte-se a nós e amplie suas chances de mudar a vida de milhares de pessoas, e a sua também.</p>
+            <br><button>Conferir vagas</button>
+        </div>
+        <div id="marcas" class="col-6 justify-content-center">
+            <span id="marcas-mrv">MRV</span><span id="marcas-eco"><span id="marcas-e">&</span>CO</span><br>
+            <img src="img/logo.png" class="marcas-logo">
+            <img src="img/instituto-mrv.png" id="abre-modal" class="marcas-logo">
         </div>
     </div>
+
+    <div id="valores">
+        <h1>Nossos valores</h1>
+        <p>Conheça os valores que nos guiam:</p>
+        <div class="row">
+            <div class="col-3">
+                <details>
+                    <summary onclick="expandir(1)">Sua Beleza <span class="simboloExpandir" style="float: right"><i id="1" class="fa fa-chevron-down"></i></span></summary>
+                    <p>Sabemos que com a rotina agitada nem sempre sobre tempo para se cuidar. Por isso o programa Sua Beleza traz para dentro da MRV um “salão de beleza”, facilitando cuidados de rotina.</p>
+                </details>
+            </div>
+            <div class="col-3">
+                <details>
+                    <summary onclick="expandir(2)">Encontro <span class="simboloExpandir" style="float: right"><i id="2" class="fa fa-chevron-down"></i></span></summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate gravida pretium. Nunc nec sollicitudin metus. Maecenas tempor porttitor tortor. Pellentesque eget vestibulum mauris.</p>
+                </details>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <details>
+                    <summary onclick="expandir(3)">Sua Mente <span class="simboloExpandir" style="float: right"><i id="3" class="fa fa-chevron-down"></i></span></summary>
+                    <p>Suspendisse euismod massa non consequat vehicula. Nullam ultricies felis non urna tempor lobortis. Etiam sagittis in nunc nec tempus. Aliquam condimentum, tellus ut sagittis luctus, elit nulla suscipit velit, sollicitudin gravida leo lorem id mi.</p>
+                </details>
+            </div>
+            <div class="col-3">
+                <details>
+                    <summary onclick="expandir(4)">Seu Estilo <span class="simboloExpandir" style="float: right"><i id="4" class="fa fa-chevron-down"></i></span></summary>
+                    <p>Pellentesque vestibulum lorem lectus, tincidunt laoreet lorem posuere vel. Etiam sagittis ipsum urna, eu consectetur ipsum mattis volutpat. Etiam metus turpis, volutpat et mattis in, sollicitudin vitae ante. Vestibulum ac lorem in arcu feugiat mattis.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h1>MRV:</h1>
+              <p>A Maior Construtora da América Latina é a principal frente de atuação do MRV&CO. Com o propósito de construir sonhos que transformam o mundo, a MRV abre as portas para que milhares de brasileiros possam conquistar um novo lar, com mais benefícios e facilidades.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 </html>
