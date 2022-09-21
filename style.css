@@ -114,6 +114,49 @@ body, html {
     border-radius: 10px;
 }
 
+#valores div div details {
+    padding: 15px 0px;
+    border-bottom: 2px solid #006B3F;
+}
+
 #valores div div details summary {
     list-style: none;
+    color: #006B3F;
+    font-weight: bold;
+}
+
+#espaco {
+    padding: 150px;
+    align-items: center;
+    margin-left: auto;
+}
+
+#carousel div div img {
+    border-radius: 20px;
+}
+
+#carousel a {
+    background-color: #006B3F;
+    height: 40px;
+    top: 50%;
+    width: 40px;
+}
+
+#espaco div h1 {
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+#conheca-nosso-espaco {
+    padding-left: 150px;
+}
+
+#tour-virtual {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#tour-virtual:hover,
+#tour-virtual:focus {
+    cursor: pointer;
 }

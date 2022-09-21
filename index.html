@@ -67,36 +67,66 @@
         </div>
     </div>
 
-    <div id="valores">
-        <h1>Nossos valores</h1>
-        <p>Conheça os valores que nos guiam:</p>
-        <div class="row">
-            <div class="col-3">
-                <details>
-                    <summary onclick="expandir(1)">Sua Beleza <span class="simboloExpandir" style="float: right"><i id="1" class="fa fa-chevron-down"></i></span></summary>
-                    <p>Sabemos que com a rotina agitada nem sempre sobre tempo para se cuidar. Por isso o programa Sua Beleza traz para dentro da MRV um “salão de beleza”, facilitando cuidados de rotina.</p>
-                </details>
+    <div id="valores" class="row">
+        <div class="col-11">
+            <h1>Nossos valores</h1>
+            <p>Conheça os valores que nos guiam:</p>
+            <div class="row">
+                <div class="col-3">
+                    <details>
+                        <summary onclick="expandir(1)">Sua Beleza <span class="simboloExpandir" style="float: right"><i id="1" class="fa fa-chevron-down"></i></span></summary>
+                        <p>Sabemos que com a rotina agitada nem sempre sobre tempo para se cuidar. Por isso o programa Sua Beleza traz para dentro da MRV um “salão de beleza”, facilitando cuidados de rotina.</p>
+                    </details>
+                </div>
+                <div class="col-3">
+                    <details>
+                        <summary onclick="expandir(2)">Encontro <span class="simboloExpandir" style="float: right"><i id="2" class="fa fa-chevron-down"></i></span></summary>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate gravida pretium. Nunc nec sollicitudin metus. Maecenas tempor porttitor tortor. Pellentesque eget vestibulum mauris.</p>
+                    </details>
+                </div>
             </div>
-            <div class="col-3">
-                <details>
-                    <summary onclick="expandir(2)">Encontro <span class="simboloExpandir" style="float: right"><i id="2" class="fa fa-chevron-down"></i></span></summary>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate gravida pretium. Nunc nec sollicitudin metus. Maecenas tempor porttitor tortor. Pellentesque eget vestibulum mauris.</p>
-                </details>
+            <div class="row">
+                <div class="col-3">
+                    <details>
+                        <summary onclick="expandir(3)">Sua Mente <span class="simboloExpandir" style="float: right"><i id="3" class="fa fa-chevron-down"></i></span></summary>
+                        <p>Suspendisse euismod massa non consequat vehicula. Nullam ultricies felis non urna tempor lobortis. Etiam sagittis in nunc nec tempus. Aliquam condimentum, tellus ut sagittis luctus, elit nulla suscipit velit, sollicitudin gravida leo lorem id mi.</p>
+                    </details>
+                </div>
+                <div class="col-3">
+                    <details>
+                        <summary onclick="expandir(4)">Seu Estilo <span class="simboloExpandir" style="float: right"><i id="4" class="fa fa-chevron-down"></i></span></summary>
+                        <p>Pellentesque vestibulum lorem lectus, tincidunt laoreet lorem posuere vel. Etiam sagittis ipsum urna, eu consectetur ipsum mattis volutpat. Etiam metus turpis, volutpat et mattis in, sollicitudin vitae ante. Vestibulum ac lorem in arcu feugiat mattis.</p>
+                    </details>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-3">
-                <details>
-                    <summary onclick="expandir(3)">Sua Mente <span class="simboloExpandir" style="float: right"><i id="3" class="fa fa-chevron-down"></i></span></summary>
-                    <p>Suspendisse euismod massa non consequat vehicula. Nullam ultricies felis non urna tempor lobortis. Etiam sagittis in nunc nec tempus. Aliquam condimentum, tellus ut sagittis luctus, elit nulla suscipit velit, sollicitudin gravida leo lorem id mi.</p>
-                </details>
-            </div>
-            <div class="col-3">
-                <details>
-                    <summary onclick="expandir(4)">Seu Estilo <span class="simboloExpandir" style="float: right"><i id="4" class="fa fa-chevron-down"></i></span></summary>
-                    <p>Pellentesque vestibulum lorem lectus, tincidunt laoreet lorem posuere vel. Etiam sagittis ipsum urna, eu consectetur ipsum mattis volutpat. Etiam metus turpis, volutpat et mattis in, sollicitudin vitae ante. Vestibulum ac lorem in arcu feugiat mattis.</p>
-                </details>
-            </div>
+        <div class="col-1">
+            <img style="position: absolute; right: -40px;" src="img/triangulo.png">
+        </div>
+    </div>
+    
+    <div id="espaco" class="row">
+        <div class="col-4">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/nosso-espaco.png" alt="Primeiro slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Próximo</span>
+                </a>
+              </div>
+        </div>
+        <div id="conheca-nosso-espaco" class="col-6">
+            <h1>Conheça nosso espaço </h1>
+            <p>Temos um ambiente dinâmico, que estimula o aprendizado e convida todos a pensarem no bem comum. Afinal, estamos construindo hoje as bases para um mundo melhor, cheio de inovação, sustentabilidade e integridade. E tudo isso a gente já encontra por aqui.</p><br>  
+            <p id="tour-virtual">Clique aqui e faça um tour virtual pela nossa sede em BH (MG).</p>
         </div>
     </div>
 
