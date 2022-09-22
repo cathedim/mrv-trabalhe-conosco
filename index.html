@@ -14,7 +14,8 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script type = "text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="locations.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             $("#abre-modal").click(function(){
@@ -42,10 +43,10 @@
         </div>
     </div>
 	<div id="vitrine" class="row">
-		<div class="col-6">
+		<div class="col-5">
             <p id="vitrine-paragrafo">Trabalhe conosco nessa transformação</p>
         </div>
-        <div class="col-6">
+        <div class="col-5">
 		    <img src="img/trabalhadores.png">
         </div>
 	</div>
@@ -127,6 +128,32 @@
             <h1>Conheça nosso espaço </h1>
             <p>Temos um ambiente dinâmico, que estimula o aprendizado e convida todos a pensarem no bem comum. Afinal, estamos construindo hoje as bases para um mundo melhor, cheio de inovação, sustentabilidade e integridade. E tudo isso a gente já encontra por aqui.</p><br>  
             <p id="tour-virtual">Clique aqui e faça um tour virtual pela nossa sede em BH (MG).</p>
+        </div>
+    </div>
+
+    
+    <div id="vagas" class="row">
+        <div class="col-4">
+            <h1>Vagas disponíveis</h1>
+            <p>Encontre a oportunidade que mais combina com você:</p><br>
+
+            <form action="">
+                <label for="cidade">Em qual cidade você quer trabalhar?</label><br>
+                <select id="cidade-select" style="width:300px">
+                    <option value="">Selecionar um tipo</option>
+                </select><br>
+                <label for="cidade">Qual sua área de atuação?</label><br>
+                <select id="cidade-select" style="width:300px">
+                    <option value="">Selecionar área</option>
+                </select><br>
+                <label for="lname">E que tipo de vaga você procura?</label><br>
+                <input style="width:300px" type="text"><br><br>
+                <input type="submit" value="Submit">
+            </form> 
+        </div>
+        <div class="col-2 vl"></div>
+        <div class="col-1">
+            <img src="img/pessoa-lupa.png">
         </div>
     </div>
 

@@ -26,6 +26,7 @@ body, html {
 
 #vitrine {
     display: flex;
+    margin-top: 50px;
     /*margin: 0% 5%;
     width: 90%;*/
 }
@@ -34,7 +35,7 @@ body, html {
     background: linear-gradient(225deg, #079D56 0%, #006B3F 100%);
     border-radius: 32px;
     width: 800px;
-    height: 200px;
+    height: 350px;
 
     color: #fff;
     font-size: 350%;
@@ -160,3 +161,17 @@ body, html {
 #tour-virtual:focus {
     cursor: pointer;
 }
+
+#vagas {
+    padding: 20px;
+}
+
+.vl {
+    border-left: 2px solid #242625;
+    height: 350px;
+    margin-top: 90px;
+  }
+
+#vagas div img {
+    margin-top: 90px;
+}  
