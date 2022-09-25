@@ -1,0 +1,17 @@
+@media only screen and (max-width: 600px) {
+    #vitrine-paragrafo {
+        width: 400px;
+    }
+
+    #vitrine {
+        width: 300px;
+    }
+
+    #novas-oportunidades {
+        width: 1000px;
+    }
+
+    #marcas img {
+        width: 100px;
+    }
+  }

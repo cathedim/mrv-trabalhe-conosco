@@ -1,7 +1,11 @@
 $(document).ready(function(){
   $("#abre-modal").click(function(){
-    $("#myModal").modal();
-  });
+    document.getElementById("corpo").style.opacity = "0.1";
+  }); 
+
+  $(".fechar").click(function(){
+    document.getElementById("corpo").style.opacity = "1";
+  }); 
 });
 
 function expandir(id) {

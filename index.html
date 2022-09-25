@@ -1,181 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalhe conosco | MRV</title>
     <link rel="icon" href="img/icon.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="(max-width: 800px)" href="style_mobile.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" crossorigin="anonymous">
-
-    
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="locations.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $("#abre-modal").click(function(){
-                alert('oi');
-                $("#myModal").modal();
-            });
-        });
-    </script>  
 </head>
 <body>
-    <div id="header">
-        <div id="header-logo">
+    
+    <!--div id="header" class="row">
+        <div id="header-logo" class="col-1">
             <a href="https://www.mrv.com.br/"><img id="logo" src="img/logo.png"></a>
         </div>
-        <div id="header-titulos">
-            <a href="">Imóveis à venda</a>
-            <a href="">Institucional</a>
-            <a href="">Sustentabilidade</a>
-            <a href="">Investidores</a>
-            <a href="">Clientes</a>
-            <a href="">Inovação</a>
+        <div id="header-titulos" class="col-6">
+            <a class="header-links" href="">Imóveis à venda</a>
+            <div class="dropdown"><a class="header-links" href="">Institucional</a>
+                <div class="dropdown-content">
+                  <p><a class="dropdown-links" href="">A MRV</a> | 
+                      <a class="dropdown-links" href="">Produtos</a> | 
+                      <a class="dropdown-links" href="">Relacionamentos</a> | 
+                      <a class="dropdown-links" href="">Pessoas</a> | 
+                      <a class="dropdown-links" href="">Contato</a></p>
+                </div></div>
+            <a class="header-links" href="">Sustentabilidade</a>
+            <a class="header-links" href="">Investidores</a>
+            <a class="header-links" href="">Clientes</a>
+            <a class="header-links" href="">Inovação</a>
         </div>
-        <div id="">
-
+    </div-->
+    <div id="corpo">
+        <div id="cabecalho">
+            <img style="width:100%;" src="img/cabecalho.png">
         </div>
-    </div>
-	<div id="vitrine" class="row">
-		<div class="col-5">
-            <p id="vitrine-paragrafo">Trabalhe conosco nessa transformação</p>
+        
+        <div class="container-fluid">
+            <div id="vitrine" class="row">
+                <div class="col-sm-5">
+                    <p id="vitrine-paragrafo">Trabalhe conosco nessa transformação</p>
+                </div>
+                <div class="col-sm-5">
+                    <img src="img/trabalhadores.png">
+                </div>
+            </div>
         </div>
-        <div class="col-5">
-		    <img src="img/trabalhadores.png">
+        
+        <div id="caminho">
+            <p><img src="img/home.png"> > <a href="">Pessoas</a> > <a href="">Trabalhe conosco</a></p>
         </div>
-	</div>
-	
-	<div id="caminho">
-        <p><img src="img/home.png"> > <a href="">Pessoas</a> > <a href="">Trabalhe conosco</a></p>
-    </div>
-    <div class="row">
-        <div id="novas-oportunidades" class="col-5">
-            <h1>Explore novas oportunidades na sua carreira</h1>
-            <p>Quer fazer parte da equipe de <b>uma das melhores empresas para se trabalhar segundo o Great Place To Work 2020</b>? </p>
-            <p>Então, junte-se a nós e amplie suas chances de mudar a vida de milhares de pessoas, e a sua também.</p>
-            <br><button>Conferir vagas</button>
-        </div>
-        <div id="marcas" class="col-6 justify-content-center">
-            <span id="marcas-mrv">MRV</span><span id="marcas-eco"><span id="marcas-e">&</span>CO</span><br>
-            <img src="img/logo.png" class="marcas-logo">
-            <img src="img/instituto-mrv.png" id="abre-modal" class="marcas-logo">
-        </div>
-    </div>
-
-    <div id="valores" class="row">
-        <div class="col-11">
-            <h1>Nossos valores</h1>
-            <p>Conheça os valores que nos guiam:</p>
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-3">
-                    <details>
-                        <summary onclick="expandir(1)">Sua Beleza <span class="simboloExpandir" style="float: right"><i id="1" class="fa fa-chevron-down"></i></span></summary>
-                        <p>Sabemos que com a rotina agitada nem sempre sobre tempo para se cuidar. Por isso o programa Sua Beleza traz para dentro da MRV um “salão de beleza”, facilitando cuidados de rotina.</p>
-                    </details>
+                <div id="novas-oportunidades" class="col-sm">
+                    <h1>Explore novas oportunidades na sua carreira</h1>
+                    <p>Quer fazer parte da equipe de <b>uma das melhores empresas para se trabalhar segundo o Great Place To Work 2020</b>? </p>
+                    <p>Então, junte-se a nós e amplie suas chances de mudar a vida de milhares de pessoas, e a sua também.</p>
+                    <br><button>Conferir vagas</button>
                 </div>
-                <div class="col-3">
-                    <details>
-                        <summary onclick="expandir(2)">Encontro <span class="simboloExpandir" style="float: right"><i id="2" class="fa fa-chevron-down"></i></span></summary>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate gravida pretium. Nunc nec sollicitudin metus. Maecenas tempor porttitor tortor. Pellentesque eget vestibulum mauris.</p>
-                    </details>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <details>
-                        <summary onclick="expandir(3)">Sua Mente <span class="simboloExpandir" style="float: right"><i id="3" class="fa fa-chevron-down"></i></span></summary>
-                        <p>Suspendisse euismod massa non consequat vehicula. Nullam ultricies felis non urna tempor lobortis. Etiam sagittis in nunc nec tempus. Aliquam condimentum, tellus ut sagittis luctus, elit nulla suscipit velit, sollicitudin gravida leo lorem id mi.</p>
-                    </details>
-                </div>
-                <div class="col-3">
-                    <details>
-                        <summary onclick="expandir(4)">Seu Estilo <span class="simboloExpandir" style="float: right"><i id="4" class="fa fa-chevron-down"></i></span></summary>
-                        <p>Pellentesque vestibulum lorem lectus, tincidunt laoreet lorem posuere vel. Etiam sagittis ipsum urna, eu consectetur ipsum mattis volutpat. Etiam metus turpis, volutpat et mattis in, sollicitudin vitae ante. Vestibulum ac lorem in arcu feugiat mattis.</p>
-                    </details>
+                <div id="marcas" class="col-md justify-content-center">
+                    <span id="marcas-mrv">MRV</span><span id="marcas-eco"><span id="marcas-e">&</span>CO</span><br>
+                    <img src="img/logo.png" class="marcas-logo">
+                    <a href="#modal"><img src="img/instituto-mrv.png" id="abre-modal" class="marcas-logo"></a>
                 </div>
             </div>
         </div>
-        <div class="col-1">
-            <img style="position: absolute; right: -40px;" src="img/triangulo.png">
-        </div>
-    </div>
-    
-    <div id="espaco" class="row">
-        <div class="col-4">
-            <div id="carousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/nosso-espaco.png" alt="Primeiro slide">
-                  </div>
+
+        <div class="container-fluid">
+            <div id="valores" class="row">
+                <div class="col-lg">
+                    <h1>Nossos valores</h1>
+                    <p>Conheça os valores que nos guiam:</p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <details>
+                                <summary onclick="expandir(1)">Sua Beleza <span class="simboloExpandir" style="float: right"><i id="1" class="fa fa-chevron-down"></i></span></summary>
+                                <p>Sabemos que com a rotina agitada nem sempre sobre tempo para se cuidar. Por isso o programa Sua Beleza traz para dentro da MRV um “salão de beleza”, facilitando cuidados de rotina.</p>
+                            </details>
+                        </div>
+                        <div class="col-sm-6">
+                            <details>
+                                <summary onclick="expandir(2)">Encontro <span class="simboloExpandir" style="float: right"><i id="2" class="fa fa-chevron-down"></i></span></summary>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate gravida pretium. Nunc nec sollicitudin metus. Maecenas tempor porttitor tortor. Pellentesque eget vestibulum mauris.</p>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <details>
+                                <summary onclick="expandir(3)">Sua Mente <span class="simboloExpandir" style="float: right"><i id="3" class="fa fa-chevron-down"></i></span></summary>
+                                <p>Suspendisse euismod massa non consequat vehicula. Nullam ultricies felis non urna tempor lobortis. Etiam sagittis in nunc nec tempus. Aliquam condimentum, tellus ut sagittis luctus, elit nulla suscipit velit, sollicitudin gravida leo lorem id mi.</p>
+                            </details>
+                        </div>
+                        <div class="col-sm-6">
+                            <details>
+                                <summary onclick="expandir(4)">Seu Estilo <span class="simboloExpandir" style="float: right"><i id="4" class="fa fa-chevron-down"></i></span></summary>
+                                <p>Pellentesque vestibulum lorem lectus, tincidunt laoreet lorem posuere vel. Etiam sagittis ipsum urna, eu consectetur ipsum mattis volutpat. Etiam metus turpis, volutpat et mattis in, sollicitudin vitae ante. Vestibulum ac lorem in arcu feugiat mattis.</p>
+                            </details>
+                        </div>
+                    </div>
                 </div>
-                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Anterior</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Próximo</span>
-                </a>
-              </div>
+                <div class="col-sm">
+                    <img style="position: absolute; right: -40px;" src="img/triangulo.png">
+                </div>
+            </div>
         </div>
-        <div id="conheca-nosso-espaco" class="col-6">
-            <h1>Conheça nosso espaço </h1>
-            <p>Temos um ambiente dinâmico, que estimula o aprendizado e convida todos a pensarem no bem comum. Afinal, estamos construindo hoje as bases para um mundo melhor, cheio de inovação, sustentabilidade e integridade. E tudo isso a gente já encontra por aqui.</p><br>  
-            <p id="tour-virtual">Clique aqui e faça um tour virtual pela nossa sede em BH (MG).</p>
+        
+        <div class="container-fluid">
+            <div id="espaco" class="row">
+                <div class="col-sm-3">
+                    <div id="carousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/nosso-espaco.png" alt="Primeiro slide">
+                        </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                        </a>
+                    </div>
+                </div>
+                <div id="conheca-nosso-espaco" class="col-sm">
+                    <h1>Conheça nosso espaço </h1>
+                    <p>Temos um ambiente dinâmico, que estimula o aprendizado e convida todos a pensarem no bem comum. Afinal, estamos construindo hoje as bases para um mundo melhor, cheio de inovação, sustentabilidade e integridade. E tudo isso a gente já encontra por aqui.</p><br>  
+                    <p id="tour-virtual">Clique aqui e faça um tour virtual pela nossa sede em BH (MG).</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="container-fluid">
+            <div id="vagas" class="row">
+                <div class="col-sm">
+                    <h1>Vagas disponíveis</h1>
+                    <p>Encontre a oportunidade que mais combina com você:</p><br>
+
+                    <form action="">
+                        <label for="cidade">Em qual cidade você quer trabalhar?</label><br>
+                        <select id="cidade-select" class="vagas-input">
+                            <option value="">Selecionar um tipo</option>
+                        </select><br>
+                        <label for="cidade">Qual sua área de atuação?</label><br>
+                        <select id="cidade-select" class="vagas-input">
+                            <option value="">Selecionar área</option>
+                        </select><br>
+                        <label for="lname">E que tipo de vaga você procura?</label><br>
+                        <input class="vagas-input" type="text"><br><br>
+                        <input type="submit" id="botao-buscar" value="Buscar">
+                    </form> 
+                </div>
+                <div class="col-2 vl"></div>
+                <div class="col-1">
+                    <img src="img/pessoa-lupa.png">
+                </div>
+                <div class="col-5">
+                    <img style="position: absolute; right: -60px;" src="img/triangulo2.png">
+                </div>
+            </div>
+        </div>
+
+        <div id="rodape">
+            <img style="width:100%; margin-top:150px" src="img/rodapé.png">
         </div>
     </div>
 
-    
-    <div id="vagas" class="row">
-        <div class="col-4">
-            <h1>Vagas disponíveis</h1>
-            <p>Encontre a oportunidade que mais combina com você:</p><br>
-
-            <form action="">
-                <label for="cidade">Em qual cidade você quer trabalhar?</label><br>
-                <select id="cidade-select" style="width:300px">
-                    <option value="">Selecionar um tipo</option>
-                </select><br>
-                <label for="cidade">Qual sua área de atuação?</label><br>
-                <select id="cidade-select" style="width:300px">
-                    <option value="">Selecionar área</option>
-                </select><br>
-                <label for="lname">E que tipo de vaga você procura?</label><br>
-                <input style="width:300px" type="text"><br><br>
-                <input type="submit" value="Submit">
-            </form> 
-        </div>
-        <div class="col-2 vl"></div>
-        <div class="col-1">
-            <img src="img/pessoa-lupa.png">
-        </div>
+    <div id="modal" name="modal">
+        <h1>MRV:</h1>
+        <p>A Maior Construtora da América Latina é a principal frente de atuação do MRV&CO. Com o propósito de construir sonhos que transformam o mundo, a MRV abre as portas para que milhares de brasileiros possam conquistar um novo lar, com mais benefícios e facilidades.</p>
+        <div id="divFechar"><a href="#fechar" title="Fechar" class="fechar">x</a></div>
     </div>
-
-    <!-- Modal -->
-    <div id="myModal" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <h1>MRV:</h1>
-              <p>A Maior Construtora da América Latina é a principal frente de atuação do MRV&CO. Com o propósito de construir sonhos que transformam o mundo, a MRV abre as portas para que milhares de brasileiros possam conquistar um novo lar, com mais benefícios e facilidades.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
 </body>
 </html>
